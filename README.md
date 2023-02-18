@@ -55,12 +55,18 @@ The development build is used - as the name suggests - for development reasons. 
 
 async and defer are boolean attributes which are used along the script tags to load the external scripts efficiently into our web page.
 When we load a web page, there are two major things happening in our browser
+
+```
 a. HTML parsing
 b. Loading of the scripts
+```
 
 Loading of the scripts happens in two parts
+
+```
 a. Fetching the script from the network
 b. Actually executing the script line by line
+```
 
 In normal scenario (script tag doesn't contain async or defer keyword), HTML is parsed line by line, and when a script tag is encountered, HTML parsing is paused, script is fetched and executed then and there and then the HTML parsing continues.
 
